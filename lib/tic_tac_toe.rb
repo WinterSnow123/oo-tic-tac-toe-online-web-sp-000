@@ -86,6 +86,7 @@ def winner
 end
 
 def play
+  binding.pry
   until over? do
     turn
   end
