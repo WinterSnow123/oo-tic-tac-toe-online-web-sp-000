@@ -89,10 +89,10 @@ def play
   until over? do
     turn
   end
-if draw?
-    print "Cat's Game!"
+if won?
+    print "Congratulations #{winner}!"
   else
-    "Congratulations #{winner}!"
+    print "Cat's Game!"
   end
 end
 
