@@ -89,7 +89,10 @@ def play
   until over? do
     turn
   end
-  if won? ? puts "Congratulations #{winner}!" : puts "Cat's Game!"
+  if won?
+    puts "Congratulations #{winner}!"
+  else
+    puts "Cat's Game!"
   end
 
 
