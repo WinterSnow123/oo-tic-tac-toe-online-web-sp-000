@@ -91,5 +91,6 @@ def play
   end
   won? ? puts "Congratulations #{winner}!" : puts "Cat's Game!"
 end
+end
 
 end
