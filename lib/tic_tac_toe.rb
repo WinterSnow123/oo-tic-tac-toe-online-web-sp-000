@@ -86,12 +86,10 @@ def winner
 end
 
 def play
-  until over?{turn}
-if won?
-    puts "Congratulations #{winner}!"
-  else
-    puts "Cat's Game!"
+  until over? do
+    turn
   end
+  won? ? puts "Congratulations #{winner}!" : puts "Cat's Game!"
 end
 
 end
