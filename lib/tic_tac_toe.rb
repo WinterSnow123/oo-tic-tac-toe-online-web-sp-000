@@ -86,10 +86,7 @@ def winner
 end
 
 def play
-
-  until over? do
-    turn
-  end
+  until over?{turn}
 if won?
     puts "Congratulations #{winner}!"
   else
